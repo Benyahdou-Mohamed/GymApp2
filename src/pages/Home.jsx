@@ -1,12 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
+import { Box } from '@mui/material';
+import HeroBanner from '../components/HeroBanner.jsx'
+import SearchExercises from '../components/SearchExercises.jsx'
+import Exercises from '../components/Exercises.jsx'
 
 export default function Home() {
   return (
-    <div className="s">
-    <div>hhjg</div>
-    <p>hhjg</p>
-    <p>hhjg</p>
-    <p>hhjg</p>
-    </div>
+    
+      <Box>
+        <HeroBanner />
+        <SearchExercises/>
+        <Exercises/>
+      </Box>
   )
 }

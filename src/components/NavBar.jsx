@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { Stack } from '@mui/material'
 import Logo from '../assets/images/Logo.png'
+import Logo2 from '../assets/images/l.png'
 import { NoEncryption } from '@mui/icons-material'
 
 export default function NavBar() {
@@ -23,8 +24,8 @@ export default function NavBar() {
         alignItems="flex"
       >
         
-        <Link to='/' style={{textDecoration:'none',borderBottom:'3px solid #ff2625'}}>Home</Link>
-        <a href="#exercises" style={{textDecoration:'none',color:'#3A1212'}}>Exercice</a>
+        <Link to='/' style={{textDecoration:'none',borderBottom:'3px solid #293fab',color:'Black'}}>Home</Link>
+        <a href="#exercises" style={{textDecoration:'none',color:'Black'}}>Exercice</a>
       </Stack>
     </Stack>
     

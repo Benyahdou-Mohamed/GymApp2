@@ -60,8 +60,8 @@ export default function SearchExercises({setExercises,bodyPart,setBodyPart}) {
           >
             
           </TextField>
-          <Button onClick ={handleSearch} className="search-btn"  variant="contained" sx={{bgcolor:"'#293fab",textTransform:"none",width:{lg:"175px",xs:"80px"},
-        fontSize:{lg:"20px",xs:"14px"},position:"absolute",height:"60px"
+          <Button onClick ={handleSearch} style={{height: "55px"}} className="search-btn"  variant="contained" sx={{bgcolor:"#293fab",textTransform:"none",width:{lg:"175px",xs:"80px"},
+        fontSize:{lg:"20px",xs:"14px"},position:"absolute"
         }}>Search</Button>
       </Box>
       <Box sx={{position:'relative',width:"100%" ,p:'20px'}}>

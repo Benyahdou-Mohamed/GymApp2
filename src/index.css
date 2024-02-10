@@ -53,17 +53,17 @@ code {
   position: absolute;
   right: 40px;
   top: 0px;
-  width: 700px;
-  height: 900px;
-  margin-top: -330px;
+  width: 600px;
+  height: 650px;
+  /* margin-top: -330px; */
 
 }
 
 .exercise-card {
-  width: 400px;
+  /* width: 400px; */
   height: 445px;
   background: #fff;
-  border-top: 4px solid #FF2625;
+  border-top: 4px solid #293fab;
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
@@ -101,6 +101,10 @@ code {
   width: 387px;
   height: 381px;
   text-decoration: none;
+}
+.react-horizontal-scrolling-menu--inner-wrapper{
+  width: inherit !important;
+  visibility: hidden;
 }
 
 @media screen and (max-width:1200px) {

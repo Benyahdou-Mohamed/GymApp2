@@ -40,8 +40,8 @@ export default function ExerciceDetail() {
     <Box>
       
       <Detail exerciseDetail={exerciseDetail}/>
-      <ExerciseVideos exerciseVideos={exerciseVideos} />
-      <SimilarExercises/>
+      <ExerciseVideos exerciseVideos={exerciseVideos} name={exerciseDetail.name} />
+      <SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises}/>
       
     </Box>
   )

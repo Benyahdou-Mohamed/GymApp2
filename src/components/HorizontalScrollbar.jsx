@@ -4,6 +4,7 @@ import {ScrollMenu,VisibilityContext} from 'react-horizontal-scrolling-menu'
 import BodyParts from './BodyParts'
 import RightArrowIcon from '../assets/icons/right-arrow.png';
 import LeftArrowIcon from '../assets/icons/left-arrow.png';
+import ExerciseCard from './ExerciseCard';
 
 const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
@@ -24,12 +25,13 @@ const RightArrow = () => {
     </Typography>
   );
 };
-export default function HorizontalScrollbar ({data,bodyPart,setBodyPart}){
+export default function HorizontalScrollbar ({data,bodyPart,setBodyPart,bodyParts}){
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
     {data.map((item)=>(
         <Box key={item.id || item} itemID={item.id || item} title={item.id || item} m="0 40px">
-            <BodyParts item={item} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
+        {bodyParts ? <BodyParts item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} /> : <ExerciseCard exercise={item} /> }
+      
         </Box>
 
     )

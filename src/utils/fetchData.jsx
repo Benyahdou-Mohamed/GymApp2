@@ -7,6 +7,17 @@ export const exerciceOptions= {
     params: {limit: '1000'}
   }
 };
+export const youtubeOptions = {
+  method: 'GET',
+  url: 'https://youtube-search-and-download.p.rapidapi.com/channel/about',
+  params: {
+    id: 'UCE_M8A5yxnLfW0KghEeajjw'
+  },
+  headers: {
+    'X-RapidAPI-Key': 'f5f31e2244msh53ffa0d470ad83ep11ff77jsnd216560387c7',
+    'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
+  }
+};
 
 
 
